@@ -1,5 +1,5 @@
 
-let limit = 100;
+let limit = 0;
 
 let number_of_players = 2;
 
@@ -149,6 +149,7 @@ function roll(currentScore, limit) {
 function hold() {
     if (randomPlayer === 1) {
         global1 += score1;
+    //  global1=limit;
         score1 = 0;
         rightPlayer.style.backgroundColor="rgb(214, 168, 187)";
         leftPlayer.style.backgroundColor="rgb(180, 113, 152)";
@@ -199,7 +200,8 @@ function hold() {
     }
 
     else {
-        global2 += score2;
+      global2 += score2;
+    // global2=limit;
         score2 = 0;
         leftPlayer.style.backgroundColor="rgb(214, 168, 187)";
         rightPlayer.style.backgroundColor="rgb(180, 113, 152)";
@@ -227,7 +229,7 @@ function hold() {
             gameOver = true;
             return;
         }
-        else if (global2 === limit) {
+        else if (global2 == limit) {
             console.log("second2");
             leftPlayer.style.backgroundColor="rgb(214, 168, 187)";
             rightPlayer.style.backgroundColor="rgb(104, 104, 104)";
