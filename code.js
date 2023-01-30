@@ -42,7 +42,7 @@ console.log(randomPlayer);
 const newGame = document.getElementById("new-game");
 newGame.addEventListener("click", (event) => {
     event.preventDefault();
-    window.location = "./first.html";
+    window.location = "./index.html";
 });
 
 

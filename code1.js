@@ -8,7 +8,7 @@ start.addEventListener("click", (event) => {
     const limit_val = document.getElementById("limit");
 console.log(limit_val.value);
     sessionStorage.setItem("limit", limit_val.value);
-window.location = "./index.html";
+window.location = "./index2.html";
 
 });
 
