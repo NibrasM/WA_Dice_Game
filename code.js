@@ -168,7 +168,7 @@ function hold() {
             const res1=document.getElementById("result1");
             res1.innerText="Passed the target score"
             const res2=document.getElementById("result2");
-            res2.innerHTML="You Win!";
+            res2.innerText="You Win!";
             rightPlayer.style.color="rgb(162, 32, 72)";
             btnSection.style.background=" linear-gradient(90deg, rgb(214, 168, 187) 50%, rgb(104, 104, 104) 50% )";
         
@@ -184,7 +184,7 @@ function hold() {
             const res2=document.getElementById("result2");
             res2.innerText="You Lost!"
             const res1=document.getElementById("result1");
-            res1.innerHTML="You Win!";
+            res1.innerText="You Win!";
             leftPlayer.style.color="rgb(162, 32, 72)";
             btnSection.style.background=" linear-gradient(90deg,rgb(104, 104, 104) 50%, rgb(214, 168, 187) 50%)";
             rollConst.disabled=true;
